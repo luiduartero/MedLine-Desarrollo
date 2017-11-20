@@ -16,7 +16,7 @@ android:
   - extra-android-m2repository
   - sys-img-${ANDROID_ABI}-${ANDROID_TARGET}
 script:
-   - ./gradlew build connectedCheck
+   - gradlew tasks
 deploy:
   provider: pages
   github_token: ${GITHUB_TOKEN}
