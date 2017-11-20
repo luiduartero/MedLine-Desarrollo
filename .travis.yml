@@ -6,6 +6,7 @@ env:
     - ANDROID_ABI=armeabi-v7a
     - GITHUB_TOKEN=7f09e35a5b611169509357ee1c8208c6001e4ffa
     - REPO=dajandro/MedLine-Pruebas
+
 script:
    - ./gradlew build connectedCheck
 deploy:
