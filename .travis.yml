@@ -10,7 +10,7 @@ env:
 before_install:
  - chmod +x gradlew
 script:
-  - ./gradlew tasks
+  - ./gradlew build connectedCheck
 deploy:
   provider: pages
   github_token: ${GITHUB_TOKEN}
