@@ -1,5 +1,6 @@
 language: android
 jdk: oraclejdk8
+sudo: false
 env:
   global:
     - ANDROID_TARGET=android-15
@@ -15,7 +16,7 @@ android:
   - extra-android-m2repository
   - sys-img-${ANDROID_ABI}-${ANDROID_TARGET}
 script:
-   - ./gradlew build jacocoTestReport assembleAndroidTest
+   - ./gradlew build connectedCheck
 deploy:
   provider: pages
   github_token: ${GITHUB_TOKEN}
