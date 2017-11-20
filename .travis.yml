@@ -1,6 +1,6 @@
 language: android
 jdk: oraclejdk8
-sudo: true
+sudo: false
 env:
   global:
     - ANDROID_TARGET=android-15
@@ -8,7 +8,7 @@ env:
     - GITHUB_TOKEN=7f09e35a5b611169509357ee1c8208c6001e4ffa
     - REPO=dajandro/MedLine-Pruebas
 script:
-   - sudo ./gradlew tasks
+   - ./gradlew tasks
 deploy:
   provider: pages
   github_token: ${GITHUB_TOKEN}
