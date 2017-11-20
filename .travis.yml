@@ -15,7 +15,6 @@ android:
   - android-15
   - extra-android-m2repository
   - sys-img-${ANDROID_ABI}-${ANDROID_TARGET}
-  - com.android.tools.build:gradle:3.0.0
 before_install:
  - chmod +x gradlew
 script:
