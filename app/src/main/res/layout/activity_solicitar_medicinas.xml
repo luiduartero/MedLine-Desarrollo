@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4286f4"
+    android:id="@+id/mylogin"
+    tools:context="com.example.josejoescobar.medlinenetwork2.SolicitarMedicinas">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="552dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <Button
+            android:id="@+id/button"
+            style="@style/button_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText6"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/editText6"
+            android:layout_marginBottom="11dp"
+            android:backgroundTint="#ffffff"
+            android:text="Pedir Medicina"
+            android:textColor="#F50057" />
+
+        <TextView
+            android:id="@+id/textView8"
+            style="@style/textView_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText3"
+            android:layout_alignStart="@+id/editText3"
+            android:layout_below="@+id/linearLayout2"
+            android:text="Numero de Telefono:"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textView9"
+            style="@style/textView_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText4"
+            android:layout_alignStart="@+id/editText4"
+            android:layout_below="@+id/editText4"
+            android:text="Direccion:"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textView12"
+            style="@style/textView_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView14"
+            android:layout_alignStart="@+id/textView14"
+            android:layout_below="@+id/textView14"
+            android:text="Cantidad:"
+            android:textColor="#000000"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/textView14"
+            style="@style/textView_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView13"
+            android:layout_alignBottom="@+id/textView13"
+            android:layout_toEndOf="@+id/editText6"
+            android:layout_toRightOf="@+id/editText6"
+            android:text="Precio por unidad:"
+            android:textColor="#000000"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/textView13"
+            style="@style/textView_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText2"
+            android:layout_alignStart="@+id/editText2"
+            android:layout_below="@+id/editText2"
+            android:layout_marginTop="27dp"
+            android:text="Cantidad:"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            style="@style/textView_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText4"
+            android:layout_alignStart="@+id/editText4"
+            android:layout_below="@+id/linearLayout2"
+            android:text="Nombre:"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textView11"
+            style="@style/textView_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText3"
+            android:layout_alignStart="@+id/editText3"
+            android:layout_below="@+id/editText3"
+            android:text="Forma de pago:"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/editText2"
+            style="@style/editText_style"
+            android:layout_width="1in"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView9"
+            android:fontFamily="casual"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#181a19"
+            android:textColorHint="#000000" />
+
+        <EditText
+            android:id="@+id/editText6"
+            style="@style/editText_style"
+            android:layout_width="1.5in"
+            android:layout_height="50dp"
+            android:layout_alignEnd="@+id/editText4"
+            android:layout_alignRight="@+id/editText4"
+            android:layout_below="@+id/textView15"
+            android:fontFamily="casual"
+            android:hint="Comentarios para su pedido ?"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#181a19"
+            android:textColorHint="#000000"
+            android:textSize="10sp" />
+
+        <EditText
+            android:id="@+id/editText5"
+            style="@style/editText_style"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@+id/textView13"
+            android:layout_alignBottom="@+id/textView13"
+            android:layout_alignEnd="@+id/editText2"
+            android:layout_alignRight="@+id/editText2"
+            android:fontFamily="casual"
+            android:hint="1"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#181a19"
+            android:textColorHint="#000000" />
+
+        <TextView
+            android:id="@+id/textView15"
+            style="@style/textView_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView12"
+            android:layout_alignStart="@+id/textView12"
+            android:layout_below="@+id/textView12"
+            android:text="total:"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/editText3"
+            style="@style/editText_style"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/editText4"
+            android:layout_alignBottom="@+id/editText4"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/editText4"
+            android:fontFamily="casual"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#181a19"
+            android:textColorHint="#000000" />
+
+        <EditText
+            android:id="@+id/editText4"
+            style="@style/editText_style"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView8"
+            android:layout_marginTop="16dp"
+            android:fontFamily="casual"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#181a19"
+            android:textColorHint="#000000" />
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/radioButton2"
+            android:layout_alignStart="@+id/radioButton2"
+            android:layout_below="@+id/radioButton2"
+            android:text="Tarjeta de Credito" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView11"
+            android:layout_alignStart="@+id/textView11"
+            android:layout_alignTop="@+id/editText2"
+            android:text="Efectivo" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp">
+
+            <ImageView
+                android:id="@+id/img_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle"
+                android:padding="30dp"
+                android:src="@drawable/ic_friend_24dp"
+                android:tint="#000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ID #5"
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText5"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/editText5"
+            android:layout_marginTop="28dp"
+            android:text="Pedro Quan"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

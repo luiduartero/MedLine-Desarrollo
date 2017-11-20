@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">MedLineNetwork™</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="Salir">Salir</string>
+    <string name="facebook_app_id">129128204428210</string>
+
+
+    <string name="InfoDoctor1">EDUCACION Y PREPARACION: \nParte de sus estudios fueron en la universidad del Valle de Guatemala como estudiante de Medicina. \n EXPERIENCIA: \nHa sido parte del equipo de médicos cardarios  de la República de Guatemala en el periodo 1998 a 2013. \n ESPECIALIDAD:\nSu especialidad es el trato de enfermedades del corazon a personas de la tercera edad generando grandes y detallados historiales medicos.</string>
+    <string name="InfoDoctor2">EXPERIENCIA: Ha sido parte del equipo de médicos cardarios  de la República de Guatemala en el periodo 1998 a 2013. </string>
+    <string name="InfoDoctor3">ESPECIALIDAD:Su especialidad es el trato de enfermedades del corazon a personas de la tercera edad generando grandes y detallados historiales medicos. </string>
+
+
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_ver_paciente">VerPaciente</string>
+    <string name="title_activity_citas">citas</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

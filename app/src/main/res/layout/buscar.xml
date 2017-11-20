@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_background"
+    tools:context="com.example.josejoescobar.medlinenetwork2.Buscar">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="417dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/infoescoger"
+                    android:layout_width="206dp"
+                    android:layout_height="409dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="EN ESTA OPCION PODRA BUSCAR MEDICINA Y LA DISPONIBILIDAD DE LA MISMA EN LA FARMACIA TAN SOLO ESCRIBIENDO EL NOMBRE DE LA MEDICINA Y NUESTRA APLICACION SOLA HARA LA BUSQUEDA DE DISPONIBLIDAD EN LA FARMACIA MAS CERCANA."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="179dp"
+                    android:layout_height="389dp"
+                    app:srcCompat="@mipmap/buscarmed" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="132dp"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/menuitem_background"
+                android:onClick="Regresar"
+                app:srcCompat="@mipmap/salir" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
+

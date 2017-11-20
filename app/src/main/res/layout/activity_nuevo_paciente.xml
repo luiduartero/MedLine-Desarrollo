@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4286f4"
+    android:id="@+id/mylogin"
+    tools:context="com.example.josejoescobar.medlinenetwork2.NuevoPaciente">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:weightSum="1"
+        android:layout_toRightOf="@+id/linearLayoutIzq"
+        android:layout_toEndOf="@+id/linearLayoutIzq">
+
+        <TextView
+            android:id="@+id/textView8"
+            style="@style/textView_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:text="Numero de Telefono:"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:singleLine="true"
+            style="@style/editText_style"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Escriba su celular"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#181a19"
+            android:textColorHint="#000000"
+            android:textSize="12dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtEdad"
+                style="@style/textView_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:text="Edad:"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editText5"
+                style="@style/editText_style"
+                android:layout_width="79dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:singleLine="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="1"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#181a19"
+                android:textColorHint="#000000" />
+        </RelativeLayout>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.07">
+
+            <TextView
+                android:id="@+id/textView11"
+                style="@style/textView_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:text="Sexo:"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+
+
+            <RadioButton
+                android:id="@+id/rBtnMasculino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Masculino"
+                android:layout_alignBottom="@+id/textView11"
+                android:layout_toRightOf="@+id/textView11"
+                android:layout_toEndOf="@+id/textView11"
+                android:layout_marginLeft="13dp"
+                android:layout_marginStart="13dp" />
+
+
+            <RadioButton
+                android:id="@+id/rBtnFemenino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Femenino"
+                android:layout_below="@+id/rBtnMasculino"
+                android:layout_alignLeft="@+id/rBtnMasculino"
+                android:layout_alignStart="@+id/rBtnMasculino" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="197dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05">
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/textView_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:text="Operaciones:"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/rBtnSiOperaciones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/editText9"
+                android:layout_alignStart="@+id/editText9"
+                android:layout_below="@+id/textView2"
+                android:layout_marginLeft="29dp"
+                android:layout_marginStart="29dp"
+                android:text="Si" />
+
+            <RadioButton
+                android:id="@+id/rBtnNoOperaciones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_toEndOf="@+id/textView2"
+                android:layout_toRightOf="@+id/textView2"
+                android:text="No" />
+
+            <EditText
+                android:id="@+id/editText9"
+                style="@style/editText_style"
+                android:layout_width="167dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/rBtnNoOperaciones"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif-condensed"
+                android:singleLine="true"
+                android:hint="Si, especifique"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#181a19"
+                android:textColorHint="#000000"
+                android:textSize="12sp" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.88">
+
+            <TextView
+                android:id="@+id/textView6"
+                style="@style/textView_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Primera Consulta?:"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <RadioButton
+                android:id="@+id/rBtnSiPrimeraConsulta"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView6"
+                android:layout_marginLeft="47dp"
+                android:layout_marginStart="47dp"
+                android:text="Si" />
+
+            <RadioButton
+                android:id="@+id/rBtnNoPrimeraConsulta"
+                android:layout_width="74dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textView6"
+                android:layout_marginEnd="11dp"
+                android:layout_marginRight="11dp"
+                android:text="No" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            style="@style/button_style"
+            android:layout_marginTop="14dp"
+            android:background="#ffff"
+            android:text="Agregar Paciente"
+            android:textColor="#F50057"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/linearLayoutIzq">
+
+        <ImageView
+            android:id="@+id/img_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle"
+            android:layout_gravity="center"
+            android:padding="20sp"
+            android:src="@drawable/ic_friend_24dp"
+            android:tint="@android:color/white" />
+
+        <TextView
+            android:id="@+id/textView7"
+            style="@style/textView_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre:"
+            android:padding="10sp"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <EditText
+            android:id="@+id/editText4"
+            style="@style/editText_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Escriba su nombre"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:singleLine="true"
+            android:textAllCaps="false"
+            android:textColor="#181a19"
+            android:textColorHint="#000000"
+            android:textSize="12dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/textView9"
+            style="@style/textView_style"
+            android:layout_width="wrap_content"
+            android:padding="10sp"
+            android:layout_height="wrap_content"
+            android:text="Direccion:"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <EditText
+            android:id="@+id/editText7"
+            style="@style/editText_style"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:singleLine="true"
+            android:layout_below="@+id/textView9"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Escriba su direccion"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#181a19"
+            android:textColorHint="#000000"
+            android:textSize="12dp"
+ />
+
+        <TextView
+            android:id="@+id/textView4"
+            style="@style/textView_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sintomas:"
+            android:padding="10sp"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/editText2"
+            style="@style/editText_style"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignEnd="@+id/editText7"
+            android:layout_alignRight="@+id/editText7"
+            android:layout_below="@+id/radioButton4"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Escriba sus sintomas"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:singleLine="true"
+            android:textAllCaps="false"
+            android:textColor="#181a19"
+            android:textColorHint="#000000"
+            android:textSize="12dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            style="@style/textView_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:text="Medicamentos Actuales:"
+            android:textColor="@android:color/white"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/editText6"
+            style="@style/editText_style"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignEnd="@+id/textView10"
+            android:layout_alignRight="@+id/textView10"
+            android:layout_below="@+id/textView10"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Escriba sus medicinas"
+            android:inputType="textPersonName"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#181a19"
+            android:textColorHint="#000000"
+            android:textSize="12dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/textView_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enfermedades familiares:"
+            android:padding="10sp"
+            android:textColor="@android:color/white"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/editText8"
+            style="@style/editText_style"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/radioButton6"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Si, especifique"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:singleLine="true"
+            android:textColor="#181a19"
+            android:textColorHint="#000000"
+            android:textSize="12sp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4286f4"
+    android:id="@+id/mylogin"
+    tools:context="com.example.josejoescobar.medlinenetwork2.PrescribirMedicinas">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearUP"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linearDOWN"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="323dp"
+            android:layout_alignBaseline="@+id/textView12"
+            android:layout_alignBottom="@+id/textView12"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/textView_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="48dp"
+                android:padding="@dimen/activity_vertical_margin"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Diagnostico:"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <EditText
+                android:singleLine="true"
+                android:id="@+id/ETxtDiagnostico"
+                style="@style/editText_style"
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView"
+                android:layout_alignBottom="@+id/textView"
+                android:layout_toEndOf="@+id/textView"
+                android:layout_toRightOf="@+id/textView"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="Enfermedad"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#181a19"
+                android:textColorHint="#000000" />
+
+            <TextView
+                android:id="@+id/textView13"
+                style="@style/textView_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/ETxtDiagnostico"
+                android:layout_marginLeft="19dp"
+                android:layout_marginStart="19dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Fecha de inicio de incapacidad:"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <EditText
+                android:singleLine="true"
+                android:id="@+id/ETxtDia"
+                style="@style/editText_style"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView13"
+                android:layout_marginEnd="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_toLeftOf="@+id/ETxtDiagnostico"
+                android:layout_toStartOf="@+id/ETxtDiagnostico"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="DIA"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#181a19"
+                android:textColorHint="#000000" />
+
+            <EditText
+                android:id="@+id/ETxtMes"
+                style="@style/editText_style"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/ETxtDia"
+                android:layout_alignBottom="@+id/ETxtDia"
+                android:layout_alignLeft="@+id/ETxtDiagnostico"
+                android:layout_alignStart="@+id/ETxtDiagnostico"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="MES"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#181a19"
+                android:textColorHint="#000000" />
+
+            <EditText
+                android:id="@+id/ETxtAno"
+                style="@style/editText_style"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/ETxtMes"
+                android:layout_alignBottom="@+id/ETxtMes"
+                android:layout_alignEnd="@+id/spinnerMedicina"
+                android:layout_alignRight="@+id/spinnerMedicina"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="AÑO"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#181a19"
+                android:textColorHint="#000000" />
+
+            <Spinner
+                android:id="@+id/spinnerMedicina"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/ETxtDiagnostico"
+                android:layout_alignLeft="@+id/ETxtMes"
+                android:layout_alignRight="@+id/ETxtDiagnostico"
+                android:layout_alignStart="@+id/ETxtMes"
+                android:layout_below="@+id/ETxtMes"
+                android:layout_marginTop="27dp"
+                android:background="@android:color/background_light"
+                android:popupBackground="@android:color/background_light" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView12"
+        style="@style/textView_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_vertical_margin"
+        android:text="INFORMACION MEDICA"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearDOWN"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView15"
+        style="@style/textView_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Dosis:"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_alignBottom="@+id/linearUP"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/textView16"
+        style="@style/textView_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/linearUP"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="71dp"
+        android:padding="@dimen/activity_vertical_margin"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Medicamento:"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/ETxtMedicina"
+        style="@style/editText_style"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView16"
+        android:layout_alignBottom="@+id/textView16"
+        android:layout_toEndOf="@+id/textView16"
+        android:layout_toRightOf="@+id/textView16"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Receta"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#181a19"
+        android:textColorHint="#000000"
+        android:visibility="invisible" />
+
+    <EditText
+        android:singleLine="true"
+        android:id="@+id/ETxtCantidadMedicamento"
+        style="@style/editText_style"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Cant"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#181a19"
+        android:textColorHint="#000000"
+        android:layout_alignBaseline="@+id/textView15"
+        android:layout_alignBottom="@+id/textView15"
+        android:layout_toRightOf="@+id/textView15"
+        android:layout_toEndOf="@+id/textView15"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp" />
+
+    <EditText
+        android:singleLine="true"
+        android:id="@+id/ETxtIDPaciente"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:fontFamily="sans-serif-condensed"
+        android:background="#ffff"
+        android:hint="ID"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#181a19"
+        android:textColorHint="#000000"
+        android:layout_below="@+id/textView21"
+        android:layout_alignLeft="@+id/textView21"
+        android:layout_alignStart="@+id/textView21" />
+
+    <EditText
+        android:singleLine="true"
+        android:id="@+id/ETxtTiempoDosisAlDia"
+        style="@style/editText_style"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Tiempo"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#181a19"
+        android:textColorHint="#000000"
+        android:layout_alignBaseline="@+id/editText19"
+        android:layout_alignBottom="@+id/editText19"
+        android:layout_toRightOf="@+id/editText19"
+        android:layout_toEndOf="@+id/editText19" />
+
+    <EditText
+        android:singleLine="true"
+        android:id="@+id/ETxtTiempoDeUso"
+        style="@style/editText_style"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Durante cuanto"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#181a19"
+        android:textColorHint="#000000"
+        android:layout_below="@+id/ETxtTiempoDosisAlDia"
+        android:layout_alignLeft="@+id/ETxtMedicina"
+        android:layout_alignStart="@+id/ETxtMedicina" />
+
+    <EditText
+        android:singleLine="true"
+        android:id="@+id/ETxtObservaciones"
+        style="@style/editText_style"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#181a19"
+        android:textColorHint="#000000"
+        android:layout_alignBaseline="@+id/textView20"
+        android:layout_alignBottom="@+id/textView20"
+        android:layout_alignLeft="@+id/ETxtMedicina"
+        android:layout_alignStart="@+id/ETxtMedicina" />
+
+    <TextView
+        android:id="@+id/editText19"
+        style="@style/textView_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_vertical_margin"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Cada:"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:layout_alignTop="@+id/ETxtCantidadMedicamento"
+        android:layout_alignLeft="@+id/ETxtMedicina"
+        android:layout_alignStart="@+id/ETxtMedicina"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp" />
+
+    <TextView
+        android:id="@+id/editText20"
+        style="@style/textView_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_vertical_margin"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Tiempo de uso:"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:layout_alignTop="@+id/ETxtTiempoDeUso"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView20"
+        style="@style/textView_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_vertical_margin"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Observaciones:"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:layout_below="@+id/ETxtTiempoDeUso"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        style="@style/textView_style"
+        android:fontFamily="sans-serif-condensed"
+        android:text="ID Paciente:"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/ETxtObservaciones"
+        android:layout_alignLeft="@+id/textView15"
+        android:layout_alignStart="@+id/textView15" />
+
+    <Button
+
+        android:id="@+id/button2"
+        style="@style/button_style"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="37dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:background="#93a8d8"
+        android:text="Generar Prescripcion"
+        android:textColor="@android:color/white"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+</RelativeLayout>

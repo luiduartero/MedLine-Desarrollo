@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/my_bg_anim"
+    android:id="@+id/mylogin"
+    tools:context="com.example.josejoescobar.medlinenetwork2.Registro"
+    android:orientation="vertical">
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="37dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:weightSum="1">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Registro"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#407d79b3"
+            android:hint="Nombre"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+        <EditText
+            android:id="@+id/editTUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#407d79b3"
+            android:hint="Usuario"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+        <EditText
+            android:id="@+id/editTCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#407d79b3"
+            android:hint="Correo Electronico"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+        <EditText
+            android:id="@+id/editTPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#407d79b3"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:padding="8dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+        <EditText
+            android:id="@+id/editTRePass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#407d79b3"
+            android:hint="Vuelva a escribir la Contraseña"
+            android:inputType="textPassword"
+            android:padding="8dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+        <RadioGroup
+            android:id="@+id/rgroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/appDoctor"
+                android:layout_width="96dp"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:onClick="rbClick"
+                android:text="Doctor" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/appPaciente"
+                android:layout_width="96dp"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:onClick="rbClick"
+                android:text="Paciente" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ya tienes una cuenta ? "
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inicia sesion"
+            android:id="@+id/txtLinkLogin"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnRegistrarse"
+        android:layout_width="306dp"
+        android:layout_height="59dp"
+        android:layout_above="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#93a8d8"
+        android:gravity="center"
+        android:text="Registrarse"
+        android:textColor="#ffff" />
+
+</RelativeLayout>
