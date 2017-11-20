@@ -19,7 +19,8 @@ before_install:
  - chmod +x gradlew
 script:
   #- ./gradlew build connectedCheck --debug
-  - ./gradlew assembleDebug --debug
+  #- ./gradlew assembleDebug --debug
+  - ./gradlew build --debug
 deploy:
   provider: pages
   github_token: ${GITHUB_TOKEN}
